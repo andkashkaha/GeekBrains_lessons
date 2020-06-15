@@ -17,3 +17,22 @@ while user_answer==1:
 
 for z in enumerate(my_list, 1):
     print(z)
+    
+    
+# Необходимо собрать аналитику о товарах. Реализовать словарь,
+# в котором каждый ключ — характеристика товара, например название, а значение — список значений-характеристик, например список названий товаров.
+
+name_list=[]
+price_list=[]
+count_list=[]
+unit_list=[]
+
+for k in my_list:
+    name_list.append(k.get('название'))
+    price_list.append(k.get('цена'))
+    count_list.append(k.get('количество'))
+    unit_list.append(k.get('единица измерения'))
+
+final_dict={"название": name_list, "цена": price_list, "количество": count_list, "единица измерения": unit_list}
+print ("В агрегированном виде это будет выглядеть так:")
+print (final_dict)
