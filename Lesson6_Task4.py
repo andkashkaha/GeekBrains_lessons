@@ -56,10 +56,10 @@ class PoliceCar(Car):
         print(f"{self.name} {self.color} едет со скоростью {self.speed} км\ч. Но полицейским у нас можно все")
 
 
-lada=TownCar("Lada Седан", "баклажан", 75)
-kamaz=WorkCar("Камаз", "желтый", 39)
-porsche=SportCar("Porsche", "красный", 90)
-ford=PoliceCar("Ford", "бело-синий", 199, True)
+lada=TownCar("Lada Седан", "баклажан", randint(1,100))
+kamaz=WorkCar("Камаз", "желтый", randint(1,60))
+porsche=SportCar("Porsche", "красный", randint(1,200))
+ford=PoliceCar("Ford", "бело-синий", randint(1,200), True)
 
 lada.go()
 kamaz.go()
