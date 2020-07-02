@@ -34,12 +34,13 @@ class Cell:
                 a=a+"*"
         return a
 
-c1=Cell(17)
-c2=Cell(58)
+c1=Cell(23)
+c2=Cell(33)
 print(f"Клетка1 {c1} ячеек")
 print(f"Клетка2 {c2} ячеек")
 print(f"Клетка1+клетка2: {c1+c2}")
 print(f"Клетка1-клетка2: {c1-c2}")
 print(f"Клетка1*клетка2: {c1*c2}")
 print(f"Клетка1//клетка2: {c1//c2}")
-print(f"Проверяем метод make_order:\n{c1.make_order(4)}")
+i=5 #количество элементов в одном ряду
+print(f"Проверяем метод make_order. В одном ряду должно быть {i} ячеек:\n{c1.make_order(i)}")
